@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <link href="./style.css" rel="stylesheet" />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w-full h-[100vh] bg-gray-100 p-4">
+      <header class="flex items-center justify-between gap-6 bg-yellow-200 p-4">
+        <h2 class="text-orange-400">Charles Kasasira</h2>
+        <ul class="flex justify-center items-center gap-3">
+          <li class="text-gray-800">Home</li>
+          <li class="text-gray-800">About</li>
+          <li class="text-gray-800">Project</li>
+        </ul>
+        <button class="text-gray-800 w-[150px] p-2 border-2 rounded-lg">
+          Resume
+        </button>
+      </header>
+
+      <div class="w-full bg-yellow-200 p-4 flex justify-start">
+        <section class="flex flex-col w-[60%] p-4">
+          <h3 class="text-gray-800">hello,</h3>
+          <h1 class="text-gray-800 font-bold">i am charles.</h1>
+          <h6 class="text-orange-400">UI/UX Designer</h6>
+
+          <p class="text-gray-500 w-80 mt-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur possimus pariatur enim, assumenda ab voluptatum.
+          </p>
+          <button
+            class="text-white-200 w-[150px] p-2 border-2 outline-none rounded-2xl mt-3 bg-orange-400 shadow-xl"
+          >
+            Hire Me
+          </button>
+        </section>
+        <div class="w-[40%] h-[40%]">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvzqC0Yk2EdPxA71JDBtbYuKdmmbmvU8mi1Q&s"
+            class="w-60 object-cover p-4"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
